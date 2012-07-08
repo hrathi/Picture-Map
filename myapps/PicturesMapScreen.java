@@ -72,7 +72,7 @@ class PicturesMapScreen extends FullScreen implements FieldChangeListener {
 				Mappable m = _mapField.getFocusedMappable();
 				if( m instanceof ClusterMarkers ) {
 					_upMarker = (ClusterMarkers)m;
-		            if( !_upMarker.isSuperCluster() ) {
+					if( !_upMarker.isSuperCluster() ) {
 			            String uri = _upMarker.getIconUri();
 			            _upMarker.setIconUri("res://img/green" + uri.substring(uri.lastIndexOf('/')));
 			            _upMarker.update();
